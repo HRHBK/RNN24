@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Color Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="introDiv">
+        <h1>You are about to get started!</h1>
+    </div>
+    <table id="resultsTable" style="display: none">
+        <thead>
+            <tr>
+                <th>Attempt</th>
+                <th>Language</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+    </table>
+    <div id="table"></div>
+
+    <div id="gameDiv">
+        <h1>Programming Language Color Game</h1>
+        <h3>You have a maximum of 20 trials.</h3>
+        <form id="myForm">
+            <input type="text" id="language" placeholder="Enter programming language" /><br />
+            <input type="text" id="color" placeholder="Enter color" /><br />
+            <button id="submit">Submit</button>
+            <div id="result"></div>
+        </form>
+    </div>
+    <audio id="correctSound" src="correct.opus"></audio>
+    <audio id="incorrectSound" src="wrong.opus"></audio>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
